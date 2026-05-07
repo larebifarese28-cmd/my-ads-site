@@ -1,84 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة الأرباح سواسوة</title>
+    <title>نظام الأرباح سواسوة</title>
+    <script src="https://pl29371532.profitablecpmratenetwork.com/0f/e1/b4/0fe1b4569297dd06a37c9414ad72bfff.js"></script>
+    
     <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .header {
-            background: linear-gradient(90deg, #1e40af 0%, #3b82f6 100%);
-            width: 100%;
-            padding: 25px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        .main-content {
-            max-width: 600px;
-            width: 90%;
-            margin-top: 30px;
-            background: #1e293b;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            border: 1px solid #334155;
-        }
-        .ad-container {
-            background: #ffffff;
-            margin: 25px 0;
-            padding: 15px;
-            border-radius: 10px;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: #94a3b8;
-        }
-        .badge {
-            background: #22c55e;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-        }
+        body { background-color: #1a1a1a; color: white; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        #ad-box { width: 90%; max-width: 400px; background: white; color: black; margin: 50px auto; padding: 20px; border-radius: 15px; }
+        #timer { font-size: 40px; color: red; font-weight: bold; }
+        .btn { display: none; background: green; color: white; padding: 15px; text-decoration: none; border-radius: 10px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>بيزنس سواسوة المباشر</h1>
+    <h1>مرحباً بك في عالم الأرباح سواسوة</h1>
+    <p>انتظر قليلاً حتى تظهر أفضل العروض لك سواسوة.</p>
+
+    <div id="ad-box">
+        <p>جاري تجهيز الإعلان الغالي...</p>
+        <div id="timer">10</div>
+        <script src="https://pl29371533.profitablecpmratenetwork.com/28/44/08/284408b6df19f3fa4d7f0d141c49bcdd.js"></script>
     </div>
 
-    <div class="main-content">
-        <span class="badge">النظام متصل سواسوة</span>
-        <h2>مرحباً بك في عالم الأرباح</h2>
-        <p>انتظر قليلاً حتى تظهر أفضل العروض لك سواسوة.</p>
+    <a href="#" class="btn" id="claim-btn">اضغط هنا لاستلام أرباحك سواسوة</a>
 
-        <div class="ad-container">
-            <script async="async" data-cfasync="false" src="https://pl29370507.profitablecpmratenetwork.com/c911ff633e8420a228817ec88fd033af/invoke.js"></script>
-            <div id="container-c911ff633e8420a228817ec88fd033af"></div>
-            </div>
+    <script>
+        var timeLeft = 10;
+        var timerElement = document.getElementById('timer');
+        var btnElement = document.getElementById('claim-btn');
 
-        <p>إذا ظهر الإعلان، فإن "الكونتار" بدأ يحسب سواسوة!</p>
-    </div>
-
-    <div class="footer">
-        larebifarese28-cmd.github.io/my-ads-site
-    </div>
+        var countdown = setInterval(function() {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerElement.textContent = "جاهز!";
+                btnElement.style.display = 'block'; // يظهر الزر بعد 10 ثواني سواسوة
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
